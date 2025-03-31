@@ -1,0 +1,23 @@
+/* Menú de navegación persistente */
+.navbar {
+    position: sticky;   /* Usar sticky para mantener el menú pegado al top */
+    top: 0;             /* Fijar al top */
+    z-index: 1050;      /* Un valor alto para asegurarse de que el menú esté por encima de otros elementos */
+    background-color: #0597F2;
+    width: 100%;        /* Asegura que el menú ocupe todo el ancho */
+    transition: top 0.3s ease-in-out;
+}
+
+/* Contenido de la página */
+.content {
+    margin-top: 80px;   /* Ajusta esto según la altura de tu menú para evitar que el contenido se solape */
+}
+
+/* Clase para el menú al hacer scroll */
+.navbar.scrolled {
+    background-color: #0457b4; /* Cambiar color al hacer scroll */
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: #0597F2 !important;
+}
